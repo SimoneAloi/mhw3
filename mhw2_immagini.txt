@@ -1,0 +1,38 @@
+Logo della pagina: "https://mangayo.it/modules/an_logo/img/d5721895b0230eef211ba65f3bdc34cf.svg"
+
+1° immagine dell'header: "https://mangayo.it/modules/an_homeslider/img/dbe9025c3ea02d547839aa85d4487187_1.webp"
+2° immagine dell'header: 'https://mangayo.it/modules/an_homeslider/img/a87e3a3e76d94fa44f48db43e3222676_1.webp'
+3° immagine dell'header: 'https://mangayo.it/modules/an_homeslider/img/8242d08002ed4900d740502dfa89a2a2_1.webp'
+
+Immagini dei prodotti:
+"https://mangayo.it/45255-home_default/kagurabachi-1.jpg"
+"https://mangayo.it/45378-home_default/thunder3-6.jpg"
+"https://mangayo.it/45386-home_default/miss-kobayashi-s-dragon-maid-15.jpg"
+"https://mangayo.it/45369-home_default/boy-s-abyss-17.jpg"
+
+"https://mangayo.it/45072-home_default/one-piece-jump-remix-portgas-d-ace-edizione-giapponese.jpg"
+"https://mangayo.it/44880-home_default/monthly-shonen-sunday-3-2025-blue-planter-variant-cover-mix-23.jpg"
+"https://mangayo.it/44708-home_default/weekly-shonen-jump-10-2025-embers-1-capitolo-nuova-serie.jpg"
+"https://mangayo.it/44898-home_default/doraemon-secret-gadget-special-edition-edizione-giapponese.jpg"
+
+"https://mangayo.it/44937-home_default/dabi-my-hero-academia-mortal-combat-ichiban-kuji-bandai-figure.jpg"
+"https://mangayo.it/44969-home_default/acrylic-stand-shota-aizawa-my-hero-academia-next-generations-2-ichiban-kuji-bandai-figure.jpg"
+"https://mangayo.it/44933-home_default/endeavor-my-hero-academia-mortal-combat-ichiban-kuji-bandai-figure.jpg"
+"https://mangayo.it/45290-home_default/rubber-keychain-my-hero-academia-mortal-combat-ichiban-kuji-bandai-figure-1x-casuale-.jpg"
+
+"https://mangayo.it/43804-home_default/yu-gi-oh-card-game-oscurita-suprema-booster-display-box-24-buste-ita-1a-edizione-.jpg"
+"https://mangayo.it/45305-home_default/one-piece-card-game-royal-blood-booster-display-box-24-buste-op-10-eng-.jpg"
+"https://mangayo.it/43897-home_default/yu-gi-oh-card-game-oscurita-suprema-bustina-da-9-carte-ita-1a-edizione-.jpg"
+"https://mangayo.it/42216-home_default/one-piece-card-game-premium-card-collection-best-selection-vol2-eng-.jpg"
+
+"https://mangayo.it/44778-home_default/-preordine-cuphead-out-of-the-cards-ita-1a-edizione-.jpg"
+"https://mangayo.it/38039-home_default/-preordine-dragon-ball-super-illustration-book.jpg"
+"https://mangayo.it/45326-home_default/-preordine-one-piece-card-game-a-fist-of-divine-speed-booster-display-box-24-buste-op-11-eng-.jpg"
+"https://mangayo.it/44552-home_default/-preordine-berserk-43-special-limited-edition-con-figure-di-zodd-edizione-giapponese.jpg"
+
+
+Loghi footer:
+"https://mangayo.it/modules/an_trust_badges/icons/c945d6f2401779f66c47dd3eca37f85e.jpg"
+"https://mangayo.it/modules/an_trust_badges/icons/49ecf7e5a4060590c2706e4c05be7571.jpg"
+"https://mangayo.it/modules/an_trust_badges/icons/04e7920be72f572db303920fa4149162.jpg"
+"https://mangayo.it/modules/an_trust_badges/icons/1ab6211526ecfc2459eb80f8d1037fba.jpg"
