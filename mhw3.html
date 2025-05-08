@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+     <title>Mhw3 di Programmazione Web</title>
+     <link rel="stylesheet" href="mhw3.css" />
+     <script src="mhw3.js" defer></script>
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+    <body> 
+        <div id ='view_carrello' class='hidden'>
+          <div id="carrello"> 
+            <h1>CARRELLO</h1>
+            <div id="view_products_shop"></div>
+          </div>
+        </div>  
+      
+      <div id="manga_search_div" class='hidden'>
+        <div id="div_gestione"> 
+          <h2>Cerca qui il manga che ti interessa:</h2>
+          <div>Esci</div>
+        </div>
+        <form>
+          <input type='text' id='nome_manga'>
+          <input type='submit' value='Cerca'>
+        </form>
+        <div id="searched_manga">
+            <div id="searched_manga_img"></div>
+            <div id="searched_manga_info">
+                <div id="autore">
+                  <h3>Autore/i:</h3>
+                  <div></div>
+                </div>
+                <div id="genere">
+                  <h3>Genere/i:</h3>
+                  <div></div>
+                </div>
+                <div id="sinossi">
+                  <h3>Sinossi:</h3>
+                  <div></div>
+                </div>
+                <div id="div_spotify_API_TEST">
+                  <h3>Album: </h3>
+                  <div></div>
+                </div>
+            </div>
+        </div>
+      </div>
+        
+        <header>  
+          <nav>
+            <div class="nav_container">
+              <a>SERVIZIO CLIENTI</a>
+            </div>
+            <div id="nav_gestione", class="nav_container">
+              <a>ACCEDI</a>
+              <a>LISTA DESIDERI: 0</a>
+              <a id='shop_button'>CARRELLO</a>
+            </div>
+          </nav>      
+          <div id="header_top">
+            <div class="div_non_visibile">          
+              <div class="info_box">
+                <img src="https://mangayo.it/modules/an_logo/img/d5721895b0230eef211ba65f3bdc34cf.svg">
+              </div>
+              <div class="info_box"></div>  <!--Non  mettere dentro nulla-->
+              <div class="info_box">
+                <a>NOVITà</a>
+              </div>
+              <div class="info_box">
+                <a id="manga_info">MANGA</a>
+              </div>
+              <div class="info_box">
+                <a>GIAPPONE</a>
+              </div>
+              <div class="info_box">
+                <a>FIGURE</a>
+              </div>
+              <div class="info_box">
+                <a>CARD GAME</a>
+              </div>
+              <div class="info_box">
+                <a>PREORDINI</a> </div>
+              <div class="info_box"></div> <!--Non  mettere dentro nulla-->
+              <div class="info_box">
+                <a>CERCA</a> </div>         
+            </div>
+          </div> 
+          <div id="container_img_header">
+            <img src="https://mangayo.it/modules/an_homeslider/img/dbe9025c3ea02d547839aa85d4487187_1.webp" id='Img_header'>
+            <div class="dot_container">
+              <span class='current_used_dot' class='dot' id='header_dot1'></span>
+              <span id='header_dot2'></span>
+              <span id='header_dot3'></span>
+            </div>
+          </div>      
+        </header>
+      
+      
+        <section>       
+        <div class="news_container">     
+          <h1 class="titoli_section">ULTIME USCITE</h1>
+          <div class="unseen_container">
+            <div class="prodotto">  
+              <div class="prod_descr" data-index='111'>
+                <li>Nuovo</li>
+                <img src="https://mangayo.it/45255-home_default/kagurabachi-1.jpg">
+                <p>Kagurabachi 1</p>
+                <div class="price">5,50 €</div>
+              </div>
+              <div class="button" data-index='111'>
+                <span>Aggiungi al Carrello</span>
+                </div>
+            </div>  
+            <div class="prodotto"> 
+              <div class="prod_descr" data-index='112'>
+                <li>Nuovo</li>
+                <img src="https://mangayo.it/45378-home_default/thunder3-6.jpg">
+                <p>Thunder3 6</p>
+                <div class="price">7,90 €</div>
+              </div>
+              <div class="button" data-index='112'>
+                <span>Aggiungi al Carrello</span>
+                </div>
+            </div>   
+            <div class="prodotto">
+              <div class="prod_descr" data-index='113'>
+                <li>Nuovo</li>
+                <img src="https://mangayo.it/45386-home_default/miss-kobayashi-s-dragon-maid-15.jpg">
+                <p>Miss Kobayashi's Dragon</p>
+                <div class="price">6,50 €</div>
+              </div>
+              <div class="button" data-index='113'>
+                <span>Aggiungi al Carrello</span>
+                </div>
+            </div>    
+            <div class="prodotto"> 
+              <div class="prod_descr" data-index='114'>
+                <li>Nuovo</li>
+                <img src="https://mangayo.it/45369-home_default/boy-s-abyss-17.jpg">
+                <p>Boy's Abyss 17</p>
+                <div class="price">7,00 €</div>
+              </div>
+              <div class="button" data-index='114'>
+                <span>Aggiungi al Carrello</span>
+                </div>
+            </div>     
+          </div> 
+             <div class="dot_container">
+              <span id='lastnews_dot1' class='current_used_dot'></span>
+              <span id='lastnews_dot2'></span>
+              <span id='lastnews_dot3'></span>
+            </div>
+        </div> 
+          
+          
+        <div class="news_container">     
+          <h1 class="titoli_section">NOVITà DAL GIAPPONE</h1>
+          <div class="unseen_container">
+            <div class="prodotto">  
+              <div class="prod_descr" data-index='121'>
+                <img src="https://mangayo.it/45072-home_default/one-piece-jump-remix-portgas-d-ace-edizione-giapponese.jpg">
+                <p>One Piece Jump Remix</p>
+                <div class="price">24,90 €</div>
+              </div>
+              <div class="button" data-index='121'>
+                <span>Aggiungi al Carrello</span>
+                </div>
+            </div>       
+                 <div class="prodotto"> 
+              <div class="prod_descr" data-index='122'>
+                <img src="https://mangayo.it/44880-home_default/monthly-shonen-sunday-3-2025-blue-planter-variant-cover-mix-23.jpg">
+                <p>Monthly Shonen Sunday 3</p>
+                <div class="price">34,90 €</div>
+              </div>
+              <div class="button" data-index='122'>
+                <span>Aggiungi al Carrello</span>
+                </div>
+            </div>      
+                 <div class="prodotto">
+              <div class="prod_descr" data-index='123'>
+                <img src="https://mangayo.it/44708-home_default/weekly-shonen-jump-10-2025-embers-1-capitolo-nuova-serie.jpg">
+                <p>Weekly Shonen Jump 10 2025</p>
+                <div class="price">24,90 €</div>
+              </div>
+              <div class="button" data-index='123'>
+                <span>Aggiungi al Carrello</span>
+                </div>
+            </div>          
+                 <div class="prodotto"> 
+              <div class="prod_descr" data-index='124'>
+                <img src="https://mangayo.it/44898-home_default/doraemon-secret-gadget-special-edition-edizione-giapponese.jpg">
+                <p>Doraemon Secret Gadeget</p>
+                <div class="price">34,90 €</div>
+              </div>
+              <div class="button" data-index='124'>
+                <span>Aggiungi al Carrello</span>
+                </div>
+            </div>     
+          </div> 
+           <div class="dot_container">
+              <span id='lastnews_dot1' class='current_used_dot'></span>
+              <span id='lastnews_dot2'></span>
+              <span id='lastnews_dot3'></span>
+            </div>
+        </div> 
+          
+         <div class="news_container">     
+          <h1 class="titoli_section">NOVITà FIGURE</h1>
+          <div class="unseen_container">
+            <div class="prodotto">  
+              <div class="prod_descr" data-index='131'>
+                <img src="https://mangayo.it/44937-home_default/dabi-my-hero-academia-mortal-combat-ichiban-kuji-bandai-figure.jpg">
+                <p>Dabi My Hero Academia</p>
+                <div class="price">54,90 €</div>
+              </div>
+              <div class="button" data-index='131'>
+                <span>Aggiungi al Carrello</span>
+                </div>
+            </div>       
+            <div class="prodotto"> 
+              <div class="prod_descr" data-index='132'>
+                <img src="https://mangayo.it/44969-home_default/acrylic-stand-shota-aizawa-my-hero-academia-next-generations-2-ichiban-kuji-bandai-figure.jpg">
+                <p>Acrylic Stand Shota Aizawa</p>
+                <div class="price">7,90 €</div>
+              </div>
+              <div class="button" data-index='132'>
+                <span>Aggiungi al Carrello</span>
+                </div>
+            </div>      
+            <div class="prodotto">
+              <div class="prod_descr" data-index='133'>
+                <img src="https://mangayo.it/44933-home_default/endeavor-my-hero-academia-mortal-combat-ichiban-kuji-bandai-figure.jpg">
+                <p>Endeavor My Hero Academia</p>
+                <div class="price">59,90 €</div>
+              </div>
+              <div class="button" data-index='133'>
+                <span>Aggiungi al Carrello</span>
+                </div>
+            </div>          
+                 <div class="prodotto"> 
+              <div class="prod_descr" data-index='134'>
+                <img src="https://mangayo.it/45290-home_default/rubber-keychain-my-hero-academia-mortal-combat-ichiban-kuji-bandai-figure-1x-casuale-.jpg">
+                <p>Rubber Key Chain My Hero ...</p>
+                <div class="price">4,90 €</div>
+              </div>
+              <div class="button" data-index='134'>
+                <span>Aggiungi al Carrello</span>
+                </div>
+            </div>     
+          </div>
+           <div class="dot_container">
+              <span id='lastnews_dot1' class='current_used_dot'></span>
+              <span id='lastnews_dot2'></span>
+              <span id='lastnews_dot3'></span>
+            </div>
+        </div>
+          
+          <div class="news_container">     
+          <h1 class="titoli_section">NOVITà CARD GAME</h1>
+          <div class="unseen_container">
+            <div class="prodotto">  
+              <div class="prod_descr" data-index='141'>
+                <img src="https://mangayo.it/43804-home_default/yu-gi-oh-card-game-oscurita-suprema-booster-display-box-24-buste-ita-1a-edizione-.jpg">
+                <p>Yu gi Oh Card Game...</p>
+                <div class="price">79,90 €</div>
+              </div>
+              <div class="button" data-index='141'>
+                <span>Aggiungi al Carrello</span>
+                </div>
+            </div>       
+                 <div class="prodotto"> 
+              <div class="prod_descr" data-index='142'>
+                <img src="https://mangayo.it/45305-home_default/one-piece-card-game-royal-blood-booster-display-box-24-buste-op-10-eng-.jpg">
+                <p>One Piece Card Game: Royal...</p>
+                <div class="price">144,00 €</div>
+              </div>
+              <div class="button" data-index='142'>
+                <span>Aggiungi al Carrello</span>
+                </div>
+            </div>      
+                 <div class="prodotto">
+              <div class="prod_descr" data-index='143'>
+                <img src="https://mangayo.it/43897-home_default/yu-gi-oh-card-game-oscurita-suprema-bustina-da-9-carte-ita-1a-edizione-.jpg">
+                <p>Yu Gi Oh Card Game:...</p>
+                <div class="price">4,90 €</div>
+              </div>
+              <div class="button" data-index='143'>
+                <span>Aggiungi al Carrello</span>
+                </div>
+            </div>          
+                 <div class="prodotto"> 
+              <div class="prod_descr" data-index='144'>
+                <img src="https://mangayo.it/42216-home_default/one-piece-card-game-premium-card-collection-best-selection-vol2-eng-.jpg">
+                <p>One Piece Card Game:...</p>
+                <div class="price">44,90 €</div>
+              </div>
+              <div class="button" data-index='144'>
+                <span>Aggiungi al Carrello</span>
+                </div>
+            </div>     
+          </div>  
+           <div class="dot_container">
+              <span id='lastnews_dot1' class='current_used_dot'></span>
+              <span id='lastnews_dot2'></span>
+              <span id='lastnews_dot3'></span>
+            </div>
+        </div>
+          
+        <div class="news_container">     
+          <h1 class="titoli_section">NOVITà PREORDINI</h1>
+          <div class="unseen_container">
+            <div class="prodotto">  
+              <div class="prod_descr" data-index='151'>
+                <img src="https://mangayo.it/44778-home_default/-preordine-cuphead-out-of-the-cards-ita-1a-edizione-.jpg">
+                <p>[PREORDINE] Cuphead: Out of...</p>
+                <div class="price">120,00 €</div>
+              </div>
+              <div class="button" data-index='151'>
+                <span>Aggiungi al Carrello</span>
+                </div>
+            </div>       
+                 <div class="prodotto"> 
+              <div class="prod_descr" data-index='152'>
+                <img src="https://mangayo.it/38039-home_default/-preordine-dragon-ball-super-illustration-book.jpg">
+                <p>[PREORDINE] Dragon Ball-...</p>
+                <div class="price">49,90 €</div>
+              </div>
+              <div class="button" data-index='152'>
+                <span>Aggiungi al Carrello</span>
+                </div>
+            </div>      
+                 <div class="prodotto">
+              <div class="prod_descr" data-index='153'>
+                <img src="https://mangayo.it/45326-home_default/-preordine-one-piece-card-game-a-fist-of-divine-speed-booster-display-box-24-buste-op-11-eng-.jpg">
+                <p>[PREORDINE] One Piece Card...</p>
+                <div class="price">144,00 €</div>
+              </div>
+              <div class="button" data-index='153'>
+                <span>Aggiungi al Carrello</span>
+                </div>
+            </div>          
+                 <div class="prodotto"> 
+              <div class="prod_descr" data-index='154'>
+                <img src="https://mangayo.it/44552-home_default/-preordine-berserk-43-special-limited-edition-con-figure-di-zodd-edizione-giapponese.jpg">
+                <p>[PREORDINE] Berserk 43-...</p>
+                <div class="price">139,90 €</div>
+              </div>
+              <div class="button" data-index='154'>
+                <span>Aggiungi al Carrello</span>
+                </div>
+            </div>     
+          </div> 
+           <div class="dot_container">
+              <span id='lastnews_dot1' class='current_used_dot'></span>
+              <span id='lastnews_dot2'></span>
+              <span id='lastnews_dot3'></span>
+            </div>
+        </div>        
+      </section>  
+        <footer>
+        <div id="main_info">
+          <div class="footer_info">
+            <div id="img_footer">
+              <img src="https://mangayo.it/modules/an_logo/img/d5721895b0230eef211ba65f3bdc34cf.svg">
+            </div>
+            <div id="after_img_info">
+              <p>Via Gaetano Negri, 14</p>
+              <p>20081 Abbiategrasso</p>
+              <p>Milano</p>
+              <p>Italia</p>
+              <p>servizioclienti@mangayo.it</p>
+              <a>Contattati su<a id="Whatsapp">Whatsapp</a></a>
+              <div id="loghi_social">
+              </div>
+            </div>
+          </div>
+          <div class="footer_info">
+            <h4>PRODOTTI</h4>
+            <a>Novità</a>
+            <a>Manga</a>
+            <a>Giappone</a>
+            <a>Figure</a>
+            <a>Preordine</a>
+            <a>Card Game</a>
+          </div>
+          <div class="footer_info">
+            <h4>INFORMAZIONI</h4>
+            <a>Ambiente</a>
+            <a>Termini e Condizioni</a>
+            <a>Spedizioni e Resi</a>
+            <a>Carte del Docente</a>
+            <a>Privacy Policy</a>
+            <a>Cookie Policy</a>
+            <a>Cancellazione dell'Account</a>
+            <a>Domande Frequenti</a>
+            <a>Lavora con Noi</a>
+            <a>Carta Cultura</a>
+            <a>Contattaci</a>
+          </div>
+          <div class="footer_info">
+            <h4>IL TUO ACCOUNT</h4>
+            <a>Informazioni Personali</a>
+            <a>Ordini</a>
+            <a>Note di Credito</a>
+            <a>Indirizzi</a>
+            <a>Buoni</a>
+          </div>
+        </div>
+        <div id="other_info">
+          <div class="last_container">
+            <a>2025 MangaYo! s.r.I. P.IVA:15931551004</a>
+          </div>
+          <div class="last_container">
+            <img src="https://mangayo.it/modules/an_trust_badges/icons/c945d6f2401779f66c47dd3eca37f85e.jpg">
+            <img src="https://mangayo.it/modules/an_trust_badges/icons/49ecf7e5a4060590c2706e4c05be7571.jpg">
+            <img src="https://mangayo.it/modules/an_trust_badges/icons/04e7920be72f572db303920fa4149162.jpg">
+            <img src="https://mangayo.it/modules/an_trust_badges/icons/1ab6211526ecfc2459eb80f8d1037fba.jpg">
+          </div>
+        </div>
+      </footer>
+    </body>
+</html>

@@ -1,0 +1,454 @@
+body{
+    font-family: "Roboto", Arial, sans-serif;
+  }
+  
+  .no_scroll{
+    overflow: hidden;
+  }
+  
+  #view_carrello {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  #manga_search_div{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: #FF0D4A;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #view_carrello.hidden, #manga_search_div.hidden {
+    display: none;
+  }
+
+  #div_gestione{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #div_gestione div{
+   width: 60px;
+   height: 40px;
+   margin: 10px;
+   border-radius: 40px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: black;
+   color: white;
+  }
+
+  #div_gestione div:hover{
+    cursor: pointer;
+    color: #FF0D4A;
+   }
+
+  #searched_manga {
+    width: 100%;
+    height: 87%;
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    margin-top: 5px;
+  }
+
+  #searched_manga_img{
+    width: 30%;
+    height: 96%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid black;
+    margin-top: 5px;
+  }
+
+  #searched_manga_img img{
+    width: 80%;
+    height: 80%;
+  }
+
+  #searched_manga_info{
+    width: 48%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: "Roboto", Arial, sans-serif;
+  }
+
+  #searched_manga_info h3{
+    color: #FF0D4A;
+    margin-bottom: -5px;
+    border-bottom: 2px solid slategray;
+  }
+
+  #div_spotify_API_TEST{
+    width: 60%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+  }
+
+  #div_spotify_API_TEST h3{
+    border: white;
+  }
+
+   #div_spotify_API_TEST img{
+    width: 50%;
+    height: 80%;
+    margin-top: 5px;
+  }
+  
+  #carrello{
+    width: 30%;
+    height: 100%;
+    background-color: rgb(30, 30, 30);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+  }
+  
+  #carrello h1{
+    color: white;
+  }
+  
+  #view_products_shop{
+    width: 100%;
+    height: 89%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .prodotto_carrello{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    border: 3px solid darkgrey;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+  }
+  
+  .prodotto_carrello img{
+    width: 33%;
+    height: 90%;
+  }
+  
+  a, .news_container .button {
+    cursor: pointer;
+  }
+  
+  a:hover{
+    color: #FF0D4A;
+  }
+  
+  header{
+    height: 800px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  nav{
+    width: 100%;
+    height: 5%;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid #eee; 
+  }
+  
+  .nav_container{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav_container a{
+    color: #7e7e7e;
+    font-size: 15px;
+  }
+  
+  .nav_container a:hover{
+    color: black;
+  }
+  
+  #nav_gestione{
+    height: 100%;
+    width: 35%;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  #header_top{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .div_non_visibile{
+    height: 100%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .info_box{
+    height: 100%;
+    width: 10%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .info_box img{
+    height: 80%;
+    width: 100%;
+  }
+  
+  .info_box a{
+    font-weight: bold;
+    font-size: 15px;
+  }
+  
+  #container_img_header{
+    width: 100%;
+    height: 80%; 
+    position: relative;
+  }
+  
+  #Img_header{
+    width: 100%;
+    height: 100%;
+  }
+  
+  .dot_container{
+    width: 20%;
+    position: absolute;
+    left: 40%;
+    top: 90%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .dot_container span{
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin: 10px; 
+    border-radius: 50px;
+    border: 1px solid red;
+  }
+  
+  .current_used_dot{
+    background-color: #FF1552;
+  }
+  
+  .dot_container span:hover {
+    background-color: #FF1552;
+    cursor: pointer;
+  }
+  
+  
+  
+  section{
+    width: 100%;
+    height: 3500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .news_container{
+    width: 100%;
+    height: 19%;
+    position: relative;
+  }
+  
+  .titoli_section{
+    width: 100%;
+    height: 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .unseen_container{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  .prodotto{
+    width: 24%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .prod_descr{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .prod_descr li{
+    background-color: #FF0D4A;
+    width: 16%;
+    height: 5%;
+    position: absolute;
+    left: 60px;
+    top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    color: white;
+  }
+  
+  .prod_descr .price{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .prodotto .button{
+    background-color: #FF0D4A;
+    width: 80%;
+    height: 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border-radius: 20px;
+    color: white;
+  }
+  
+  .prodotto .button:hover{
+    background-color: white;
+  }
+  
+  .prodotto .button span:hover{
+    color: black;
+  }
+  
+  .dot_container{
+    width: 20%;
+    position: absolute;
+    left: 40%;
+    top: 88%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  footer{
+    width: 100%;
+    height: 500px;
+    background-color: #f5f6fa;
+  }
+  
+  #main_info{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .footer_info{
+    width: 21%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #img_footer{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+  }
+  
+  #img_footer img{
+    width: 80%;
+    height: 70%;
+  }
+  
+  #after_img_info {
+    width: 100%;
+    height: 40%;
+  }
+  
+  #Whatsapp{
+    color: green;
+  }
+  
+  #loghi_social{
+    width: 100%;
+    height: 10%;
+  }
+  
+  .footer_info h4{
+    margin: 38px 0px;
+  }
+  
+  .footer_info a{
+    color: #7e7e7e;
+    padding: 4px;
+  }
+  
+  .footer_info a:hover{
+    color: black;
+  }
+  
+  #other_info{
+    width: 100%;
+    height: 10%;
+    border-top: 1px solid #dbdee7;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .last_container{
+    width: 40%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .last_container img{
+    height: 60%;
+  }
